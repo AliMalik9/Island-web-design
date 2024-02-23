@@ -1,0 +1,39 @@
+:root{
+    --White: #ffffff;
+    --Eerie-black: #1a1e18;
+    --White-smoke: #f4f4f4;
+    --h1: 80px;
+    --h2: 54px;
+    --Lp: 18px;
+    --p: 16px;
+    --sp: 14px
+}
+
+@font-face {
+    font-family: Cina;
+    src:  url(./Fonts/CinaGEOTest-Black-BF6401589996142.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-ExtraBold-BF640158980b295.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-Bold-BF64015899f3908.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-SemiBold-BF64015899cbc35.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-Medium-BF64015899849c0.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-Regular-BF640158993b49e.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-Light-BF64015899c5366.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-Thin-BF6401589a20010.otf) format('opentype'),
+          url(./Fonts/CinaGEOTest-ExtraLight-BF6401589a08ee8.otf) format('opentype'),
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font: 1rem/1.6 "Cina";
+    background-color: var(--White);
+}
+
+#menu{
+    font-weight: 400;
+}
