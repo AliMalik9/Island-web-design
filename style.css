@@ -3,8 +3,8 @@
     --Eerie-black: #1a1e18;
     --White-smoke: #f4f4f4;
     --h1: 6rem;
-    --h2: 54px;
-    --Lp: 18px;
+    --h2: 4.4rem;
+    --lp: 20px;
     --p: 16px;
     --sp: 14px
 }
@@ -172,11 +172,11 @@ body{
 #nav #menu{
     display: flex;
     gap: 2rem;
-    font-size: var(--sp);
+    font-size: var(--p);
 }
 
 #nav #menu a{
-    font-size: var(--sp);
+    font-size: var(--p);
     color: var(--Eerie-black);
     text-decoration: none;
 }
@@ -190,7 +190,11 @@ body{
     height: 100%;
     border-radius: 1rem;
     /* background: url("./Images/Hero-image1.png") no-repeat center center fixed;  */
-    background: url("https://images.pexels.com/photos/1031200/pexels-photo-1031200.jpeg") no-repeat center center fixed; 
+    /* background: url("https://images.pexels.com/photos/1031200/pexels-photo-1031200.jpeg") no-repeat center center fixed;  */
+    /* background: url("https://images.pexels.com/photos/2526044/pexels-photo-2526044.jpeg") center/cover;  */
+    /* background: url("https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg") center/cover;  */
+    /* background: url("https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg") center/cover;  */
+    background: url("https://images.pexels.com/photos/1585949/pexels-photo-1585949.jpeg") center/cover; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -211,7 +215,7 @@ body{
 #hero #hero-top h1{
     font-size: var(--h1);
     line-height: 7rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--White-smoke);
 }
 
@@ -229,7 +233,7 @@ body{
     border: none;
     border-radius: 1.2rem;
     font-family: "Cina GEO";
-    font-size: var(--sp);
+    font-size: var(--p);
     font-weight: 500;
     display: inline;
     /* margin-top: 3rem; */
@@ -237,7 +241,8 @@ body{
 }
 
 #hero #hero-bottom{
-
+display: flex;
+justify-content: space-between;
 }
 #hero-bottom #arrows{
     display: flex;
@@ -257,3 +262,103 @@ body{
 #hero-bottom #arrows .circle:nth-child(2){
     background-color: var(--White);
 }
+#hero-bottom #scrd{
+    height: 52px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 160px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#hero-bottom #scrd p{
+    position: absolute;
+    top: -2rem;
+    color: var(--White);
+    font-size: var(--p);
+}
+
+#main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 0 8rem 0 8rem;
+}
+
+#values{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+#values #value-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+#values #value-top h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    color: var(--Eerie-black);
+}
+
+#values #value-top p{
+    font-size: var(--lp);
+    color: var(--Eerie-black);
+}
+
+#values #value-bottom{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#values #value-bottom .vcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 240px;
+}
+
+#values #value-bottom .vcard .vcicon{
+    height: 52px;
+    width: 52px;
+    background-color: var(--White-smoke);
+    border-radius: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#values #value-bottom .vcard .vchead{
+    font-size: var(--lp);
+    color: var(--Eerie-black);
+    font-weight: 500;
+}
+
+#values #value-bottom .vcard .vcdes{
+    font-size: var(--p);
+    color: var(--Eerie-black);
+    font-weight: 500;
+    text-align: center;
+}
+
