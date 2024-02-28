@@ -1,364 +1,539 @@
-:root{
-    --White: #ffffff;
-    --Eerie-black: #1a1e18;
-    --White-smoke: #f4f4f4;
-    --h1: 6rem;
-    --h2: 4.4rem;
-    --lp: 20px;
-    --p: 16px;
-    --sp: 14px
+:root {
+  --White: #ffffff;
+  --Eerie-black: #1a1e18;
+  --White-smoke: #f4f4f4;
+  --h1: 6rem;
+  --h2: 4.4rem;
+  --lp: 20px;
+  --p: 16px;
+  --sp: 14px;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-SemiBold.eot');
-    src: local('Cina GEO SemiBold'), local('CinaGEO-SemiBold'),
-        url('./Fonts/CinaGEO-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-SemiBold.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-SemiBold.woff') format('woff'),
-        url('./Fonts/CinaGEO-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-SemiBold.eot");
+  src: local("Cina GEO SemiBold"), local("CinaGEO-SemiBold"),
+    url("./Fonts/CinaGEO-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-SemiBold.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-SemiBold.woff") format("woff"),
+    url("./Fonts/CinaGEO-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-ExtraBold.eot');
-    src: local('Cina GEO ExtraBold'), local('CinaGEO-ExtraBold'),
-        url('./Fonts/CinaGEO-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-ExtraBold.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-ExtraBold.woff') format('woff'),
-        url('./Fonts/CinaGEO-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-ExtraBold.eot");
+  src: local("Cina GEO ExtraBold"), local("CinaGEO-ExtraBold"),
+    url("./Fonts/CinaGEO-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-ExtraBold.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-ExtraBold.woff") format("woff"),
+    url("./Fonts/CinaGEO-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-Regular.eot');
-    src: local('Cina GEO Regular'), local('CinaGEO-Regular'),
-        url('./Fonts/CinaGEO-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Regular.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Regular.woff') format('woff'),
-        url('./Fonts/CinaGEO-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-Regular.eot");
+  src: local("Cina GEO Regular"), local("CinaGEO-Regular"),
+    url("./Fonts/CinaGEO-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Regular.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Regular.woff") format("woff"),
+    url("./Fonts/CinaGEO-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-Black.eot');
-    src: local('Cina GEO Black'), local('CinaGEO-Black'),
-        url('./Fonts/CinaGEO-Black.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Black.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Black.woff') format('woff'),
-        url('./Fonts/CinaGEO-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-Black.eot");
+  src: local("Cina GEO Black"), local("CinaGEO-Black"),
+    url("./Fonts/CinaGEO-Black.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Black.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Black.woff") format("woff"),
+    url("./Fonts/CinaGEO-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-Medium.eot');
-    src: local('Cina GEO Medium'), local('CinaGEO-Medium'),
-        url('./Fonts/CinaGEO-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Medium.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Medium.woff') format('woff'),
-        url('./Fonts/CinaGEO-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-Medium.eot");
+  src: local("Cina GEO Medium"), local("CinaGEO-Medium"),
+    url("./Fonts/CinaGEO-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Medium.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Medium.woff") format("woff"),
+    url("./Fonts/CinaGEO-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('CinaGEO-Light.eot');
-    src: local('Cina GEO Light'), local('CinaGEO-Light'),
-        url('./Fonts/CinaGEO-Light.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Light.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Light.woff') format('woff'),
-        url('./Fonts/CinaGEO-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("CinaGEO-Light.eot");
+  src: local("Cina GEO Light"), local("CinaGEO-Light"),
+    url("./Fonts/CinaGEO-Light.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Light.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Light.woff") format("woff"),
+    url("./Fonts/CinaGEO-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('CinaGEO-ExtraLight.eot');
-    src: local('Cina GEO ExtraLight'), local('CinaGEO-ExtraLight'),
-        url('CinaGEO-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('CinaGEO-ExtraLight.woff2') format('woff2'),
-        url('CinaGEO-ExtraLight.woff') format('woff'),
-        url('CinaGEO-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("CinaGEO-ExtraLight.eot");
+  src: local("Cina GEO ExtraLight"), local("CinaGEO-ExtraLight"),
+    url("CinaGEO-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("CinaGEO-ExtraLight.woff2") format("woff2"),
+    url("CinaGEO-ExtraLight.woff") format("woff"),
+    url("CinaGEO-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-Bold.eot');
-    src: local('Cina GEO Bold'), local('CinaGEO-Bold'),
-        url('./Fonts/CinaGEO-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Bold.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Bold.woff') format('woff'),
-        url('./Fonts/CinaGEO-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-Bold.eot");
+  src: local("Cina GEO Bold"), local("CinaGEO-Bold"),
+    url("./Fonts/CinaGEO-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Bold.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Bold.woff") format("woff"),
+    url("./Fonts/CinaGEO-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cina GEO';
-    src: url('./Fonts/CinaGEO-Thin.eot');
-    src: local('Cina GEO Thin'), local('CinaGEO-Thin'),
-        url('./Fonts/CinaGEO-Thin.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/CinaGEO-Thin.woff2') format('woff2'),
-        url('./Fonts/CinaGEO-Thin.woff') format('woff'),
-        url('./Fonts/CinaGEO-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cina GEO";
+  src: url("./Fonts/CinaGEO-Thin.eot");
+  src: local("Cina GEO Thin"), local("CinaGEO-Thin"),
+    url("./Fonts/CinaGEO-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/CinaGEO-Thin.woff2") format("woff2"),
+    url("./Fonts/CinaGEO-Thin.woff") format("woff"),
+    url("./Fonts/CinaGEO-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    font: 1rem/1.6 "Cina GEO";
-    /* font-family: "Cina GEO Test"; */
-    background-color: var(--White);
-    font-weight: 400;
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font: 1rem/1.6 "Cina GEO";
+  /* font-family: "Cina GEO Test"; */
+  background-color: var(--White);
+  font-weight: 400;
 }
 
-#main{
-    height: 100vh;
-    /* width: 100vw; */
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    
+#main {
+  height: 100vh;
+  /* width: 100vw; */
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
-#nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* height: 60px; */
-    /* background-color: var(--White-smoke); */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* height: 60px; */
+  /* background-color: var(--White-smoke); */
 }
 
-#nav #logo{
-    font-size: 1.6rem;
-    font-weight: 700;
-    cursor: pointer;
+#nav #logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-#nav #menu{
-    display: flex;
-    gap: 2rem;
-    font-size: var(--p);
+#nav #menu {
+  display: flex;
+  gap: 2rem;
+  font-size: var(--p);
 }
 
-#nav #menu a{
-    font-size: var(--p);
-    color: var(--Eerie-black);
-    text-decoration: none;
+#nav #menu a {
+  font-size: var(--p);
+  color: var(--Eerie-black);
+  text-decoration: none;
 }
 
-#nav #ncon{
-    cursor: pointer;
+#nav #ncon {
+  cursor: pointer;
 }
 
-
-#hero{
-    height: 100%;
-    border-radius: 1rem;
-    /* background: url("./Images/Hero-image1.png") no-repeat center center fixed;  */
-    /* background: url("https://images.pexels.com/photos/1031200/pexels-photo-1031200.jpeg") no-repeat center center fixed;  */
-    /* background: url("https://images.pexels.com/photos/2526044/pexels-photo-2526044.jpeg") center/cover;  */
-    /* background: url("https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg") center/cover;  */
-    /* background: url("https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg") center/cover;  */
-    background: url("https://images.pexels.com/photos/1585949/pexels-photo-1585949.jpeg") center/cover; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+#hero {
+  height: 100%;
+  border-radius: 1rem;
+  /* background: url("./Images/Hero-image1.png") no-repeat center center fixed;  */
+  /* background: url("https://images.pexels.com/photos/1031200/pexels-photo-1031200.jpeg") no-repeat center center fixed;  */
+  /* background: url("https://images.pexels.com/photos/2526044/pexels-photo-2526044.jpeg") center/cover;  */
+  /* background: url("https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg") center/cover;  */
+  /* background: url("https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg") center/cover;  */
+  background: url("https://images.pexels.com/photos/1585949/pexels-photo-1585949.jpeg")
+    center/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-#hero #hero-top{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+#hero #hero-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-#hero #hero-top h1{
-    font-size: var(--h1);
-    line-height: 7rem;
-    font-weight: 500;
-    color: var(--White-smoke);
+#hero #hero-top h1 {
+  font-size: var(--h1);
+  line-height: 7rem;
+  font-weight: 500;
+  color: var(--White-smoke);
 }
 
-#hero #hero-top p{
-    font-size: var(--lp);
-    line-height: var(--lp);
-    font-weight: 400;
-    color: var(--White-smoke);
-    /* margin-top: 1rem; */
+#hero #hero-top p {
+  font-size: var(--lp);
+  line-height: var(--lp);
+  font-weight: 400;
+  color: var(--White-smoke);
+  /* margin-top: 1rem; */
 }
 
-#hero #hero-top button{
-    background-color: var(--White);
-    padding: 1rem 4rem;
-    border: none;
-    border-radius: 1.2rem;
-    font-family: "Cina GEO";
-    font-size: var(--p);
-    font-weight: 500;
-    display: inline;
-    /* margin-top: 3rem; */
-    cursor: pointer;
+#hero #hero-top button {
+  background-color: var(--White);
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 1.2rem;
+  font-family: "Cina GEO";
+  font-size: var(--p);
+  font-weight: 600;
+  display: inline;
+  /* margin-top: 3rem; */
+  cursor: pointer;
 }
 
-#hero #hero-bottom{
-display: flex;
-justify-content: space-between;
+#hero #hero-bottom {
+  display: flex;
+  justify-content: space-between;
 }
-#hero-bottom #arrows{
-    display: flex;
-    gap: 1rem;
+#hero-bottom #arrows {
+  display: flex;
+  gap: 1rem;
 }
-#hero-bottom #arrows .circle{
-    height: 52px;
-    width: 52px;
-    border: 2px solid var(--White);
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
+#hero-bottom #arrows .circle {
+  height: 52px;
+  width: 52px;
+  border: 2px solid var(--White);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
 }
-#hero-bottom #arrows .circle:nth-child(2){
-    background-color: var(--White);
+#hero-bottom #arrows .circle:nth-child(2) {
+  background-color: var(--White);
 }
-#hero-bottom #scrd{
-    height: 52px;
-    width: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 160px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+#hero-bottom #scrd {
+  height: 52px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 160px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
-#hero-bottom #scrd p{
+#hero-bottom #scrd p {
+  position: absolute;
+  top: -2rem;
+  color: var(--White);
+  font-size: var(--p);
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 0 8rem 0 8rem;
+}
+
+#values {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+#values #value-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+#values #value-top h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+  color: var(--Eerie-black);
+}
+
+#values #value-top p {
+  font-size: var(--lp);
+  color: var(--Eerie-black);
+}
+
+#values #value-bottom {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#values #value-bottom .vcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 240px;
+}
+
+#values #value-bottom .vcard .vcicon {
+  height: 52px;
+  width: 52px;
+  background-color: var(--White-smoke);
+  border-radius: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#values #value-bottom .vcard .vchead {
+  font-size: var(--lp);
+  color: var(--Eerie-black);
+  font-weight: 500;
+}
+
+#values #value-bottom .vcard .vcdes {
+  font-size: var(--p);
+  color: var(--Eerie-black);
+  font-weight: 500;
+  text-align: center;
+}
+
+#tour {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+#tour h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+  color: var(--Eerie-black);
+  width: 100%;
+}
+
+#tour-cards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.tcard {
+  height: 480px;
+  width: 100%;
+  border-radius: 1.5rem;
+  border: 2px solid #b9b9b9;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tcard .tc-top {
+  height: 80%;
+  border-radius: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 0 0 1.5rem 1.5rem;
+  overflow: hidden;
+}
+
+.tcard .tc-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.tcard .tc-top .ratings {
+  height: 40px;
+  width: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 10px 0 0;
+  color: var(--White);
+  font-size: var(--lp);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 160px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.tc-bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tcb-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tcbc-head {
+  font-size: var(--lp);
+  color: var(--Eerie-black);
+  font-weight: 500;
+}
+
+.tcbc-para {
+  font-size: 22px;
+  color: var(--Eerie-black);
+  font-weight: 500;
+}
+
+.tcbc-para span {
+  font-size: var(--p);
+  font-weight: 400;
+}
+
+.tcb-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Eerie-black);
+  padding: 0.5rem;
+  border-radius: 999px;
+}
+
+#tour button {
+  border: 1px solid var(--Eerie-black);
+  border-radius: 200px;
+  background-color: var(--White);
+  padding: 1rem 3rem;
+  border-radius: 1.2rem;
+  font-family: "Cina GEO";
+  font-size: var(--p);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#travel {
+  width: 100%;
+  height: 42rem;
+  border-radius: 1.5rem;
+  background: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e")
+    bottom/cover;
+  padding:  4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: inset 0px 0px 100px #000000;
+}
+
+#trvel-left {
+  color: var(--White);
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#trvel-left h2 {
+  font-size: var(--h1);
+  line-height: var(--h1);
+  font-weight: 600;
+  display: inline;
+}
+#trvel-left p {
+  font-size: var(--lp);
+  display: inline;
+}
+#travel-right{
+    /* height: 28rem; */
+    height: 64%;
+    /* width: 50rem; */
+    width: 48%;
+    border-radius: 1.5rem;
+    border: 1px solid white;
     position: absolute;
-    top: -2rem;
-    color: var(--White);
-    font-size: var(--p);
+    top: 32%;
+    right: 10%;
 }
-
-#main-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5rem;
-    margin: 0 8rem 0 8rem;
-}
-
-#values{
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-}
-
-#values #value-top{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.6rem;
-}
-
-#values #value-top h2{
-    font-size: var(--h2);
-    font-weight: 600;
-    color: var(--Eerie-black);
-}
-
-#values #value-top p{
-    font-size: var(--lp);
-    color: var(--Eerie-black);
-}
-
-#values #value-bottom{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-#values #value-bottom .vcard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 240px;
-}
-
-#values #value-bottom .vcard .vcicon{
-    height: 52px;
-    width: 52px;
-    background-color: var(--White-smoke);
-    border-radius: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#values #value-bottom .vcard .vchead{
-    font-size: var(--lp);
-    color: var(--Eerie-black);
-    font-weight: 500;
-}
-
-#values #value-bottom .vcard .vcdes{
-    font-size: var(--p);
-    color: var(--Eerie-black);
-    font-weight: 500;
+#travel-right #trbox{
     text-align: center;
+    margin: 1rem;
+    font-size: var(--p);
+  display: inline-block;
+height: fit-content;
+width: fit-content;
+  padding: 4px 16px ;
+  color: var(--White);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
-
