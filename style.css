@@ -157,8 +157,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* height: 60px; */
-  /* background-color: var(--White-smoke); */
 }
 
 #nav #logo {
@@ -191,7 +189,7 @@ body {
   /* background: url("https://images.pexels.com/photos/2526044/pexels-photo-2526044.jpeg") center/cover;  */
   /* background: url("https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg") center/cover;  */
   /* background: url("https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg") center/cover;  */
-  background: url("https://images.pexels.com/photos/1585949/pexels-photo-1585949.jpeg")
+  background: url("./Images/Hero.jpg")
     center/cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -225,7 +223,7 @@ body {
   /* margin-top: 1rem; */
 }
 
-#hero #hero-top button {
+#button1 {
   background-color: var(--White);
   padding: 1rem 4rem;
   border: none;
@@ -467,7 +465,7 @@ body {
   border-radius: 999px;
 }
 
-#tour button {
+ #button2 {
   border: 1px solid var(--Eerie-black);
   border-radius: 200px;
   background-color: var(--White);
@@ -537,4 +535,77 @@ width: fit-content;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+#blog{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+}
+
+#blog-top{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  background: #6e64ff;
+}
+#bg-left{
+  width: 50%;
+  /* background-color: red; */
+}
+#bg-left h2{
+font-size: var(--h2);
+line-height: var(--h2);
+}
+
+#bg-right{
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: rgb(0, 38, 255); */
+}
+#bg-right p{
+font-size: var(--lp);
+}
+
+
+#blog-bottom{
+display: flex;
+gap: 2rem;
+width: 100%;
+height: 44rem;
+background-color: #ff468d;
+}
+#bb-left{
+width: 50%;
+height: 100%;
+}
+
+#bb-right{
+width: 50%;
+height: 100%;
+background-color: #6e64ff;
+}
+
+.bb-card{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bbc-top{
+  height: calc(100% - 120px);
+  background-color: #fff;
+  position: relative;
+}
+
+.bbc-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }
