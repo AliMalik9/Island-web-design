@@ -543,11 +543,13 @@ body {
   display: flex;
   width: 100%;
   height: fit-content;
+  gap: 2rem;
   /* background: #6e64ff; */
 }
 #bg-left {
   width: 50%;
   /* background-color: red; */
+  height: 100%;
 }
 #bg-left h2 {
   font-size: var(--h2);
