@@ -633,7 +633,7 @@ text-decoration: underline;
   width: 100%;
   height: 2px;
   border: none;
-  background-color: var(--Jet);
+  background-color: #a4a4a4;
 }
 
 #f-bottom{
